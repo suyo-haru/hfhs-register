@@ -1,9 +1,11 @@
+import { Comp_Navbar } from "@/components/Navbar";
 import OrderTable from "@/components/OrderTable";
 import PaymentModal from "@/components/PaymentModal";
 import ProductButtonList from "@/components/ProductButtonList";
 import RefundModal from "@/components/RefundModal";
 import { OrderItem } from "@/utils/OrderItem";
 import { notif } from "@/utils/notif";
+import productsByClass, { Product } from "@/utils/product";
 import { useAPI } from "@/utils/useAPI";
 import { useUserinfo } from "@/utils/useUserinfo";
 import { AppShell, Button, Stack, Title, rem } from "@mantine/core";
@@ -11,8 +13,6 @@ import { useDisclosure } from "@mantine/hooks";
 import { IconArrowBigLeftLine, IconCoins } from "@tabler/icons-react";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import { Comp_Navbar } from "../components/Navbar";
-import productsByClass, { Product } from "../utils/product";
 
 export default function Home() {
   const api = useAPI();

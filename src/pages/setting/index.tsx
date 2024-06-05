@@ -1,3 +1,4 @@
+import { Comp_Navbar } from "@/components/Navbar";
 import type { Setting } from "@/utils/RegiAPI";
 import { useAPI } from "@/utils/useAPI";
 import {
@@ -13,7 +14,6 @@ import { notifications } from "@mantine/notifications";
 import { IconCheck, IconCircleX } from "@tabler/icons-react";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import { Comp_Navbar } from "../../components/Navbar";
 
 export default function History() {
   const api = useAPI();

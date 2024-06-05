@@ -1,15 +1,15 @@
 import { APIProvider } from '@/components/APIProvider';
 import { UserinfoProvider } from '@/components/UserinfoProvider';
+import * as gtag from "@/lib/gtag";
 import { MantineProvider } from '@mantine/core';
 import { Notifications } from '@mantine/notifications';
-import { Session } from "next-auth";
+import type { Session } from "next-auth";
 import { SessionProvider } from 'next-auth/react';
-import { AppProps } from 'next/app';
+import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Script from "next/script";
 import { useEffect } from 'react';
-import * as gtag from "../lib/gtag";
 
 export default function App({ Component, pageProps }: AppProps<{ session: Session }>) {
   const router = useRouter();

@@ -1,6 +1,6 @@
+import { Comp_Navbar } from '@/components/Navbar';
 import { AppShell, List, Stack, Text, Title } from '@mantine/core';
 import Head from 'next/head';
-import { Comp_Navbar } from '../../components/Navbar';
 
 export default function Contact() {
   return (

@@ -1,7 +1,7 @@
-import { Container, Title } from "@mantine/core";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 import { useAPI } from "@/utils/useAPI";
+import { Container, Title } from "@mantine/core";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function SignOut() {
   const router = useRouter()

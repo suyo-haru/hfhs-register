@@ -1,13 +1,13 @@
+import Earn from '@/components/Earn';
 import HistoryQueueTable from '@/components/HistoryQueuetable';
+import HistoryTable from '@/components/Historytable';
+import { Comp_Navbar } from '@/components/Navbar';
 import type { AddHistoryRequest, History, Setting } from '@/utils/RegiAPI';
 import { notif } from '@/utils/notif';
 import { useAPI } from '@/utils/useAPI';
 import { AppShell, Button, Group, Stack, Title } from '@mantine/core';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
-import Earn from '../../components/Earn';
-import HistoryTable from '../../components/Historytable';
-import { Comp_Navbar } from '../../components/Navbar';
 
 export default function History() {
   const api = useAPI();

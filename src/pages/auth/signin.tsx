@@ -1,11 +1,11 @@
-import type { GetServerSidePropsContext } from "next";
-import { signIn } from "next-auth/react"
-import { getServerSession } from "next-auth/next"
-import { authOptions } from "../api/auth/[...nextauth]";
-import { Container, Title, Text, Button, rem } from "@mantine/core";
-import { IconBrandGoogle } from "@tabler/icons-react";
-import { useEffect } from "react";
+import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import { useAPI } from "@/utils/useAPI";
+import { Button, Container, Text, Title, rem } from "@mantine/core";
+import { IconBrandGoogle } from "@tabler/icons-react";
+import type { GetServerSidePropsContext } from "next";
+import { getServerSession } from "next-auth/next";
+import { signIn } from "next-auth/react";
+import { useEffect } from "react";
 
 export default function SignIn() {
   const providers = { "google": { "id": "google", "name": "Google", "type": "oauth", "signinUrl": "http://localhost:3000/api/auth/signin/google", "callbackUrl": "http://localhost:3000/api/auth/callback/google" } }
